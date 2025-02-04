@@ -72,10 +72,7 @@ async def classify_number(number: str = Query(..., description="Number to classi
         "fun_fact": fun_fact
     }
 
-# Optional: Include a health check endpoint
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
+
 
 # For local development server
 if __name__ == "__main__":
