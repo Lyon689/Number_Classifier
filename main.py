@@ -68,7 +68,3 @@ async def classify_number(number: str = Query(None)):
         "fun_fact": fun_fact
     }
 
-
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
